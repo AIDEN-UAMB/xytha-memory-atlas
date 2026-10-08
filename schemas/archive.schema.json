@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Xytha Memory Atlas — synthetic archive v1",
+  "description": "Structural validation. Cross-reference, quoted-source, calendar and parent-interval checks are performed by src/memory.mjs.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "synthetic", "profiles", "periods", "sources", "records", "feedback"],
+  "properties": {
+    "version": {"const": 1},
+    "synthetic": {"const": true},
+    "profiles": {"type": "array", "maxItems": 5000, "items": {"$ref": "#/$defs/profile"}},
+    "periods": {"type": "array", "maxItems": 5000, "items": {"$ref": "#/$defs/period"}},
+    "sources": {"type": "array", "maxItems": 5000, "items": {"$ref": "#/$defs/source"}},
+    "records": {"type": "array", "maxItems": 5000, "items": {"$ref": "#/$defs/record"}},
+    "feedback": {"type": "array", "maxItems": 5000, "items": {"$ref": "#/$defs/feedback"}}
+  },
+  "$defs": {
+    "id": {"type": "string", "minLength": 1, "maxLength": 100},
+    "time": {"type": "string", "format": "date-time", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"},
+    "text": {"type": "string", "minLength": 1, "maxLength": 6000},
+    "layer": {"enum": ["natal", "decadal", "yearly", "monthly", "daily", "hourly"]},
+    "stemBranch": {"type": "string", "pattern": "^[甲乙丙丁戊己庚辛壬癸][子丑寅卯辰巳午未申酉戌亥]$"},
+    "palace": {"enum": ["命宫", "兄弟", "夫妻", "子女", "财帛", "疾厄", "迁移", "交友", "官禄", "田宅", "福德", "父母"]},
+    "profile": {
+      "type": "object", "additionalProperties": false, "required": ["id", "name"],
+      "properties": {"id": {"$ref": "#/$defs/id"}, "name": {"type": "string", "minLength": 1, "maxLength": 80}}
+    },
+    "period": {
+      "type": "object", "additionalProperties": false, "required": ["id", "profileId", "layer", "parentId", "label", "stemBranch", "start", "end"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "profileId": {"$ref": "#/$defs/id"}, "layer": {"$ref": "#/$defs/layer"},
+        "parentId": {"anyOf": [{"$ref": "#/$defs/id"}, {"type": "null"}]},
+        "label": {"type": "string", "minLength": 1, "maxLength": 100}, "stemBranch": {"$ref": "#/$defs/stemBranch"},
+        "start": {"$ref": "#/$defs/time"}, "end": {"$ref": "#/$defs/time"}
+      }
+    },
+    "source": {
+      "type": "object", "additionalProperties": false, "required": ["id", "profileId", "at", "question", "answer"],
+      "properties": {"id": {"$ref": "#/$defs/id"}, "profileId": {"$ref": "#/$defs/id"}, "at": {"$ref": "#/$defs/time"}, "question": {"$ref": "#/$defs/text"}, "answer": {"$ref": "#/$defs/text"}}
+    },
+    "tag": {
+      "type": "object", "additionalProperties": false, "required": ["layer", "periodId", "stemBranch", "palace", "anchorPalace"],
+      "properties": {"layer": {"$ref": "#/$defs/layer"}, "periodId": {"$ref": "#/$defs/id"}, "stemBranch": {"$ref": "#/$defs/stemBranch"}, "palace": {"$ref": "#/$defs/palace"}, "anchorPalace": {"$ref": "#/$defs/palace"}}
+    },
+    "record": {
+      "type": "object", "additionalProperties": false, "required": ["id", "profileId", "sourceId", "recordedAt", "quote", "summary", "tags"],
+      "properties": {"id": {"$ref": "#/$defs/id"}, "profileId": {"$ref": "#/$defs/id"}, "sourceId": {"$ref": "#/$defs/id"}, "recordedAt": {"$ref": "#/$defs/time"}, "quote": {"$ref": "#/$defs/text"}, "summary": {"type": "string", "minLength": 1, "maxLength": 1000}, "tags": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"$ref": "#/$defs/tag"}}}
+    },
+    "feedback": {
+      "type": "object", "additionalProperties": false, "required": ["id", "recordId", "kind", "note", "at"],
+      "properties": {"id": {"$ref": "#/$defs/id"}, "recordId": {"$ref": "#/$defs/id"}, "kind": {"enum": ["useful", "not-relevant", "correction"]}, "note": {"type": "string", "maxLength": 500}, "at": {"$ref": "#/$defs/time"}}
+    }
+  }
+}

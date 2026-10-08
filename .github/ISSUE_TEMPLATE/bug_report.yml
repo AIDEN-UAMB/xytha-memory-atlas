@@ -1,0 +1,23 @@
+name: 可复现问题
+description: 使用合成数据报告演示问题
+body:
+  - type: markdown
+    attributes:
+      value: 请不要粘贴真实生辰、聊天内容、账号或密钥。安全漏洞请参阅 SECURITY.md。
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 点击了哪些合成角色、时间节点或宫位？
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 预期与实际行为
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 浏览器与操作系统
