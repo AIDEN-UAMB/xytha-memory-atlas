@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/mark.svg" width="64" alt="Xytha" /></p>
+
 # Xytha Memory Atlas
 
 **Give every memory a traceable coordinate.**
