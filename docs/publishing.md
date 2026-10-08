@@ -34,7 +34,7 @@ git push -u origin main
 
 `npm run build` 生成 `dist/`。将其作为站点根目录部署，或放到 GitHub Pages 对应的发布分支。所有运行时资源使用相对路径，允许放在 `/xytha-memory-atlas/` 这样的子路径下。
 
-本仓库没有默认启用自动发布工作流，也不会修改 Xytha 正式站点。确认静态站点可访问后，可在 README 首屏增加其实际地址；不要预先填写尚不存在的在线演示链接。
+本仓库通过 `.github/workflows/pages.yml` 发布公开静态演示：`main` 更新后运行测试、公开文件检查和构建，仅上传 `dist/`。部署任务只申请 Pages 与 OIDC 权限，不修改 Xytha 正式站点。确认静态站点可访问后，可在 README 首屏增加其实际地址；不要预先填写尚不存在的在线演示链接。
 
 ## 首次发布文字
 
