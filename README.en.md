@@ -6,6 +6,7 @@
 
 <h2 align="center"><a href="https://xytha.com">Explore the full Xytha experience → https://xytha.com</a></h2>
 <p align="center">Online conversations · Personalized memory · Chart exploration</p>
+<p align="center"><a href="https://aiden-uamb.github.io/xytha-memory-atlas/"><b>Try the open-source demo ↗</b></a> · No signup or API key · Synthetic data</p>
 
 [中文](README.md) · [Scope](docs/scope.md) · [Website updates (Chinese)](docs/website-changelog.md)
 

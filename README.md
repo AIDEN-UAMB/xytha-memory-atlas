@@ -3,6 +3,7 @@
 <p align="center"><b>让每条记忆，都有可追溯的坐标。</b><br/>Six time layers. Archived labels. Traceable sources.</p>
 <h2 align="center"><a href="https://xytha.com">体验完整 Xytha → https://xytha.com</a></h2>
 <p align="center">在线对话 · 个性化记忆 · 命盘探索</p>
+<p align="center"><a href="https://aiden-uamb.github.io/xytha-memory-atlas/"><b>直接试用开源演示 ↗</b></a> · 无需注册或 API Key · 合成数据</p>
 <p align="center"><a href="README.en.md">English</a> · <a href="docs/architecture.md">设计说明</a> · <a href="docs/scope.md">开源范围</a> · <a href="docs/website-changelog.md">网站更新记录</a></p>
 
 ![实际运行的合成数据演示](docs/preview.png)
