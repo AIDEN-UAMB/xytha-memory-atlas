@@ -1,7 +1,9 @@
 <p align="center"><img src="docs/mark.svg" width="64" alt="Xytha Memory Atlas" /></p>
 <h1 align="center">Xytha Memory Atlas</h1>
 <p align="center"><b>让每条记忆，都有可追溯的坐标。</b><br/>Six time layers. Archived labels. Traceable sources.</p>
-<p align="center"><a href="README.en.md">English</a> · <a href="https://xytha.com">体验 Xytha</a> · <a href="docs/architecture.md">设计说明</a> · <a href="docs/scope.md">开源范围</a></p>
+<h2 align="center"><a href="https://xytha.com">体验完整 Xytha → https://xytha.com</a></h2>
+<p align="center">在线对话 · 个性化记忆 · 命盘探索</p>
+<p align="center"><a href="README.en.md">English</a> · <a href="docs/architecture.md">设计说明</a> · <a href="docs/scope.md">开源范围</a></p>
 
 ![实际运行的合成数据演示](docs/preview.png)
 

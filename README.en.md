@@ -2,7 +2,10 @@
 
 **Give every memory a traceable coordinate.**
 
-[中文](README.md) · [Try Xytha](https://xytha.com) · [Scope](docs/scope.md)
+<h2 align="center"><a href="https://xytha.com">Explore the full Xytha experience → https://xytha.com</a></h2>
+<p align="center">Online conversations · Personalized memory · Chart exploration</p>
+
+[中文](README.md) · [Scope](docs/scope.md)
 
 ![Running demonstration with synthetic data](docs/preview.png)
 
