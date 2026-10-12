@@ -4,6 +4,9 @@
 
 ## 2026 年 10 月 12 日
 
+- [本日比较研究合并稿](https://xytha.com/research/agent/articles/agent-systems-study)：八个章节、可交互证据矩阵与图表、可下载数据，保留原稿链接；实测、源码观察和待验证方案分别标注。
+- [五款动态 Logo 独立原型](https://xytha.com/brand/labs/index.html) 可直接体验并下载；正式品牌标志尚未替换。
+
 - [Xytha Agent Research](https://xytha.com/research/agent) 独立期刊上线：首批两期四篇，包含设计手记、系统分析、代码体量报告及待执行评估方案。
 - 支持期次归档、文章搜索、中英阅读、可交互统计图、数据与引用下载、打印；明确区分已观察数据和待验证假设。
 
