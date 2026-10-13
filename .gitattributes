@@ -1,0 +1,2 @@
+# Preserve the published snapshot bytes on all platforms; provenance hashes use bytes.
+nous-1.0/** -text

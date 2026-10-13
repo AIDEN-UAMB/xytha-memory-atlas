@@ -1,0 +1,25 @@
+{
+  "version": "Nous-1.0",
+  "date": "2026-10-13",
+  "localPlatform": "Windows / Node.js 24.18.0",
+  "sourceFiles": 96,
+  "byteIdenticalFiles": 94,
+  "checks": {
+    "build": "passed",
+    "typecheck": "passed; public tsconfig targets ES2023 required by existing findLast usage",
+    "sourceHashesAndImports": "passed",
+    "credentialPatternScan": "passed; pattern scan is not a security audit",
+    "originalRegressionSuites": "11 passed",
+    "localHostIntegration": "passed: origins, server-owned identity, malformed JSON, idempotent replay, history and profile isolation",
+    "browser": "Edge desktop 1440x1000 and mobile viewport 390x844; rule answer, chart, memory panel and no horizontal overflow; no page errors",
+    "atlasRegression": "11 passed; static build passed"
+  },
+  "initialFindings": [
+    {"file":"tsconfig.json","issue":"ES2022 declarations do not expose the existing findLast usage","resolution":"Packaging type target moved to ES2023; engine unchanged"},
+    {"file":"tests/verify-providers.mjs","issue":"Old assertion expected absent thinking for GLM 5.2 auto-answer; shipped implementation explicitly disables it","resolution":"Changed only test expectation to the existing policy, preserving explicit user overrides; original and published hashes recorded"},
+    {"file":"scripts/check.mjs","issue":"A credential regex matched the end of a synthetic task-case name","resolution":"Require a token boundary before the key prefix; no credential exemption added"}
+  ],
+  "realProviderCalls": 0,
+  "notEstablished": ["real model quality or latency", "production load", "predictive validity of astrological metadata", "public multi-user authentication", "Nous 2.0 features"],
+  "remoteCI": "Consult the GitHub Actions run for the exact public commit; local results are not a remote CI claim."
+}

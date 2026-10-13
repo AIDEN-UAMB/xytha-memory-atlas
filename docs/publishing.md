@@ -12,7 +12,9 @@ Topics：`memory`、`personalization`、`visualization`、`provenance`、`human-
 
 ## 上传范围
 
-仅发布本目录，包括 `.github` 和 `.gitignore`。不要从生产项目复制额外文件。不要加入服务器环境、运行日志、真实数据、整站源代码或旧 Git 历史。
+仅发布本公开目录，包括 `.github` 和 `.gitignore`。2026-10-13 授权新增 `nous-1.0/` 独立源码；范围以 `docs/scope.md` 及来源清单为准。不要加入服务器环境、运行日志、真实数据、整站源码、Henosis 实现或旧私有 Git 历史。
+
+Nous 另需在其目录执行 `npm ci`、`npm run build`、`npm run typecheck`、`npm test`、`npm run check`。先前失败及其解释保留于验证记录。运行目录与生成数据不可加入 release。
 
 先运行 `npm test`、`npm run check`、`npm run build`，再审阅文件列表。MIT 只适用于本公开包，保留其许可证与署名文本；其说明见 [GitHub 维护的许可证介绍](https://choosealicense.com/licenses/mit/)。
 

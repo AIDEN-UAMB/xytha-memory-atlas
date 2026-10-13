@@ -1,5 +1,13 @@
 # Changelog
 
+## Nous 1.0.0 — 2026-10-13
+
+- 新增 `nous-1.0/` 完整执行依赖、原始 API、排盘、证据契约、结构化记忆与恢复。
+- 独立本地浏览器工作台、SQLite、自备模型与记忆任务命令。
+- 中英文文档、架构图、来源清单与独立 CI；README 改为 Nous / Atlas 双入口。
+- Henosis、密钥、用户数据与私有历史不公开。Atlas 原有静态演示独立保留。
+- 一条旧 GLM 5.2 auto-answer 测试预期与既有 disabled 策略不符，已修正测试并记录原因，模型实现未改。
+
 ## Documentation update — 2026-10-08
 
 - 与官网统一的 Logo 和实际演示截图。

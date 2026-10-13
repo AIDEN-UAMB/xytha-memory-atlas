@@ -1,0 +1,30 @@
+name: Nous 1.0 checks
+on:
+  push:
+    branches: [main]
+    paths: ['nous-1.0/**', '.github/workflows/nous.yml']
+  pull_request:
+    paths: ['nous-1.0/**', '.github/workflows/nous.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: nous-1.0
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - run: npm ci
+      - run: npm run build
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run check

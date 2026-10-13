@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES2023", "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext", "moduleResolution": "Bundler", "strict": true,
+    "skipLibCheck": true, "esModuleInterop": true, "noEmit": true,
+    "paths": {"@/*": ["./*"]}
+  },
+  "include": ["app/**/*.ts", "lib/**/*.ts", "db/**/*.ts", "types/**/*.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}

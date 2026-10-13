@@ -1,22 +1,35 @@
-<p align="center"><img src="docs/mark.svg" width="64" alt="Xytha" /></p>
+<p align="center"><img src="docs/mark.svg" width="72" alt="Xytha" /></p>
+<h1 align="center">Xytha Open Source</h1>
+<p align="center"><b>Grounded answers. Traceable memories.</b><br/>Nous 1.0 · Memory Atlas</p>
+<p align="center"><a href="https://xytha.com">Explore Xytha ↗</a> · <a href="nous-1.0/README.en.md">Nous source & setup</a> · <a href="https://aiden-uamb.github.io/xytha-memory-atlas/">Atlas live demo</a> · <a href="README.md">中文</a></p>
 
-# Xytha Memory Atlas
+![Xytha Open Source](docs/nous-cover.svg)
 
-**Give every memory a traceable coordinate.**
+This repository now contains two independently runnable projects: **Nous 1.0**, the complete first-generation agent execution system with a local host, and **Memory Atlas**, the existing dependency-free memory inspection playground.
 
-<h2 align="center"><a href="https://xytha.com">Explore the full Xytha experience → https://xytha.com</a></h2>
-<p align="center">Online conversations · Personalized memory · Chart exploration</p>
-<p align="center"><a href="https://aiden-uamb.github.io/xytha-memory-atlas/"><b>Try the open-source demo ↗</b></a> · No signup or API key · Synthetic data</p>
+## Nous 1.0
 
-[中文](README.md) · [Scope](docs/scope.md) · [Website updates (Chinese)](docs/website-changelog.md)
+Node.js 24 LTS:
 
-![Running demonstration with synthetic data](docs/preview.png)
+```sh
+git clone https://github.com/AIDEN-UAMB/xytha-memory-atlas.git
+cd xytha-memory-atlas/nous-1.0
+npm ci
+npm run build
+npm start
+```
 
-A standalone, dependency-free memory inspection playground. Inspect original conversations, authored summaries, six archived time layers, palace associations and append-only user corrections in one interface.
+Open **http://127.0.0.1:4174**. Your own provider is optional; without one, the host returns deterministic chart facts. See the [guide](nous-1.0/README.en.md), [architecture](nous-1.0/docs/architecture.md), [provenance](nous-1.0/SOURCE-MANIFEST.json) and [scope](docs/scope.md).
 
-The six layers—natal, decade, year, month, day and hour—come from Xytha's exploration of a Ziwei Doushu cultural taxonomy for organizing context. **This demo does not calculate charts or establish that astrological labels predict preferences.** All people, conversations and tag mappings are synthetic; the interface currently uses Chinese labels.
+Nous 1.0 streams progress and chunks a completed answer; incremental answer generation is not a shipped feature. Henosis, Nous 2.0, private history, credentials and real user data are excluded. The local host is not a public authentication deployment. Astrological metadata is not verified predictive evidence.
 
-## Run
+## Memory Atlas
+
+![Synthetic memory demonstration](docs/preview.png)
+
+Inspect original conversations, authored summaries, six archived time layers, palace associations and append-only corrections. All sample people and conversations are synthetic. The static demo does not calculate charts or call models.
+
+### Run Atlas
 
 Use Node.js 22 or newer, download the repository and run:
 
@@ -36,7 +49,7 @@ Select “查看六层示例” to load an explicit example. Change a parent tim
 - Append-only feedback that leaves original source text and archived tags intact.
 - A JSON Schema, runtime validation, synthetic fixtures and tests.
 
-This is the **inspection layer**, not the production memory engine. Production orchestration, preference scoring, retrieval weighting, model prompts, chart computation, user data and infrastructure configuration are excluded.
+Atlas is the **inspection layer**. The newly published `nous-1.0/` includes Nous orchestration, chart integration, prompts and its memory dependencies. Unpublished production components, user data and infrastructure secrets remain excluded.
 
 ## Research boundary
 

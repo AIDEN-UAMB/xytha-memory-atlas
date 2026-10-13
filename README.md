@@ -1,18 +1,43 @@
-<p align="center"><img src="docs/mark.svg" width="64" alt="Xytha Memory Atlas" /></p>
-<h1 align="center">Xytha Memory Atlas</h1>
-<p align="center"><b>让每条记忆，都有可追溯的坐标。</b><br/>Six time layers. Archived labels. Traceable sources.</p>
-<h2 align="center"><a href="https://xytha.com">体验完整 Xytha → https://xytha.com</a></h2>
-<p align="center">在线对话 · 个性化记忆 · 命盘探索</p>
-<p align="center"><a href="https://aiden-uamb.github.io/xytha-memory-atlas/"><b>直接试用开源演示 ↗</b></a> · 无需注册或 API Key · 合成数据</p>
-<p align="center"><a href="README.en.md">English</a> · <a href="docs/architecture.md">设计说明</a> · <a href="docs/scope.md">开源范围</a> · <a href="docs/website-changelog.md">网站更新记录</a></p>
+<p align="center"><img src="docs/mark.svg" width="72" alt="Xytha" /></p>
+<h1 align="center">Xytha Open Source</h1>
+<p align="center"><b>让回答有据可循，让记忆有迹可查。</b><br/>Nous 1.0 · Memory Atlas</p>
+<p align="center"><a href="https://xytha.com"><b>体验完整 Xytha ↗</b></a> · <a href="nous-1.0/README.md">Nous 源码与安装</a> · <a href="https://aiden-uamb.github.io/xytha-memory-atlas/">Atlas 在线演示</a> · <a href="README.en.md">English</a></p>
+<p align="center"><a href="https://github.com/AIDEN-UAMB/xytha-memory-atlas/actions/workflows/nous.yml"><img src="https://github.com/AIDEN-UAMB/xytha-memory-atlas/actions/workflows/nous.yml/badge.svg" alt="Nous checks" /></a> <img src="https://img.shields.io/badge/Nous-1.0-366C9A" alt="Nous 1.0" /> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-527F91" alt="MIT license" /></a></p>
+
+![Xytha Open Source](docs/nous-cover.svg)
+
+同一个仓库，两个可独立运行的入口。**Nous-1.0 现在公开完整执行系统源码**；原有 Memory Atlas 继续提供零依赖的记忆可视化演示。
+
+| 项目 | 你可以做什么 | 开始 |
+| --- | --- | --- |
+| **[Nous 1.0](nous-1.0/README.md)** | 运行 Agent，检查规划、排盘、依据、校验、恢复与记忆 | Node 24 · 自备模型可选 |
+| **[Memory Atlas](https://aiden-uamb.github.io/xytha-memory-atlas/)** | 交互查看六层归档标签、来源与概述 | 直接在线试用 · 无需密钥 |
+
+## Nous 1.0 · 公开基线
+
+领域约束的自适应工作流，包含真实执行代码与合成回归。默认保留证据契约；支持自备模型，也可仅运行确定性排盘。
+
+```sh
+git clone https://github.com/AIDEN-UAMB/xytha-memory-atlas.git
+cd xytha-memory-atlas/nous-1.0
+npm ci
+npm run build
+npm start
+```
+
+使用 Node.js 24，打开 **http://127.0.0.1:4174**。模型配置、记忆处理与本地数据说明见 [完整指南](nous-1.0/README.md)。
+
+[架构图](nous-1.0/docs/architecture.md) · [版本与开源边界](nous-1.0/docs/version-boundary.md) · [源码哈希清单](nous-1.0/SOURCE-MANIFEST.json) · [测试说明](nous-1.0/docs/testing.md)
+
+1.0 的 SSE 实时呈现阶段进度，正文完成后分块传送；Nous-2.0 的逐段生成方案尚未实现。本公开包不包含 Henosis、生产认证部署、私人数据或私有 Git 历史。不对未经测试的速度或效果作承诺。
+
+## Memory Atlas · 记忆检查演示
 
 ![实际运行的合成数据演示](docs/preview.png)
 
-**Xytha Memory Atlas 是一个可独立运行的开源记忆检查工具。** 它将原始对话、压缩概述、六层时间标签与宫位关联放在同一视图中，让人可以检查“这条记忆从哪里来、当时怎样归档、后来怎样被更正”。
+原始对话、压缩概述、六层时间与宫位关联，在同一视图中追溯。Atlas 的人物、对话与标签均为合成数据；它不调用模型、不执行排盘，其能力范围与 Nous 运行时分开说明。
 
-所有示例均为人工编写的合成数据。这里展示结构与交互，不包含真实生辰，不调用模型，不执行排盘，也不证明命理标签能够预测人格或偏好。
-
-## 30 秒开始
+### 30 秒开始 · Atlas
 
 需要 Node.js 22 或更新版本。下载并解压仓库后，在目录内运行：
 
@@ -38,7 +63,7 @@ npm run dev
 
 Xytha 的探索是：为每条记忆保留**归档当时的结构化上下文**，将本命、大限、流年、流月、流日、流时作为分层标签，与明确的来源和后续反馈相连接。用户可以沿这些坐标检查记录，而不必只相信一段生成的概述。
 
-本开源版本提供的是这套思路的**公开检查层与可复用格式**。正式版的调度、偏好评分、个性化筛选和模型上下文装配没有包含在内。
+Atlas 提供**公开检查层与可复用格式**。Nous-1.0 的执行、上下文与相关记忆实现现已单独发布于 `nous-1.0/`；未包含的正式版实现继续保留私有。
 
 | 已提供 | 具体行为 |
 | --- | --- |
