@@ -1,0 +1,20 @@
+{
+  "birth": {
+    "name": "合成演示人物",
+    "calendar": "solar",
+    "date": "1990-06-15",
+    "time": "12:00",
+    "gender": "男",
+    "leap": false,
+    "place": "合成示例",
+    "timeMode": "civil",
+    "confirmed": true
+  },
+  "date": "2026-10-20",
+  "question": "请比较2027与2028年的事业方向，只分析到流年，区分传统解释和现实条件。",
+  "settings": {
+    "historyDecades": 2,
+    "maxSupplementRounds": 1,
+    "thinking": "enabled"
+  }
+}

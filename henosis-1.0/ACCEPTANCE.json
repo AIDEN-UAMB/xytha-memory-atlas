@@ -1,0 +1,73 @@
+{
+  "version": "1.0.0",
+  "date": "2026-10-20",
+  "status": "local-engineering-checks-passed",
+  "suites": [
+    {
+      "suite": "henosis-depth",
+      "passed": true,
+      "reportedChecks": 15
+    },
+    {
+      "suite": "henosis-efficiency",
+      "passed": true,
+      "reportedChecks": 16
+    },
+    {
+      "suite": "henosis-evidence",
+      "passed": true,
+      "reportedChecks": 25
+    },
+    {
+      "suite": "henosis-generation",
+      "passed": true,
+      "reportedChecks": 24
+    },
+    {
+      "suite": "henosis-orchestration",
+      "passed": true,
+      "reportedChecks": 14
+    },
+    {
+      "suite": "henosis-plan",
+      "passed": true,
+      "reportedChecks": 34
+    },
+    {
+      "suite": "henosis-reliability",
+      "passed": true,
+      "reportedChecks": 13
+    },
+    {
+      "suite": "henosis-router",
+      "passed": true,
+      "reportedChecks": 10
+    },
+    {
+      "suite": "henosis-runtime",
+      "passed": true,
+      "reportedChecks": 10
+    },
+    {
+      "suite": "henosis-temporal-regression",
+      "passed": true,
+      "reportedChecks": true
+    }
+  ],
+  "cliTestsPassed": 3,
+  "realProviderCalls": 0,
+  "professionalQualityValidated": false,
+  "originalRuntimeFilesMatchingPreHenosis2Snapshot": 43,
+  "sourceManifestEntries": 60,
+  "excludes": [
+    "Henosis-2.0",
+    "Nous-2.0",
+    "production-account-deployment",
+    "private-records",
+    "real-model-performance-benchmarks"
+  ],
+  "notes": [
+    "Canonical source and original runtime behavior unchanged. Standalone host adapters are recorded in SOURCE-MANIFEST.json.",
+    "GitHub CI runs are separate from this local Windows validation."
+  ]
+}

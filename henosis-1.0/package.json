@@ -1,0 +1,25 @@
+{
+  "name": "xytha-henosis",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Original Xytha Henosis 1.0: evidence-driven planning, investigation and resumable synthesis.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/test.mjs",
+    "check": "node scripts/check.mjs",
+    "demo": "node cli.mjs --chart",
+    "start": "node --env-file-if-exists=.env cli.mjs"
+  },
+  "dependencies": {
+    "iztro": "2.6.1",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

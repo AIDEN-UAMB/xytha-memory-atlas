@@ -1,17 +1,32 @@
 <p align="center"><img src="docs/mark.svg" width="72" alt="Xytha" /></p>
 <h1 align="center">Xytha Open Source</h1>
-<p align="center"><b>让回答有据可循，让记忆有迹可查。</b><br/>Nous 1.0 · Memory Atlas</p>
-<p align="center"><a href="https://xytha.com"><b>体验完整 Xytha ↗</b></a> · <a href="nous-1.0/README.md">Nous 源码与安装</a> · <a href="https://aiden-uamb.github.io/xytha-memory-atlas/">Atlas 在线演示</a> · <a href="README.en.md">English</a></p>
+<p align="center"><b>让回答有据可循，让记忆有迹可查。</b><br/>Henosis 1.0 · Nous 1.0 · Memory Atlas</p>
+<p align="center"><a href="https://xytha.com"><b>体验完整 Xytha ↗</b></a> · <a href="henosis-1.0/README.md">Henosis 源码与安装</a> · <a href="nous-1.0/README.md">Nous 源码与安装</a> · <a href="https://aiden-uamb.github.io/xytha-memory-atlas/">Atlas 在线演示</a> · <a href="README.en.md">English</a></p>
 <p align="center"><a href="https://github.com/AIDEN-UAMB/xytha-memory-atlas/actions/workflows/nous.yml"><img src="https://github.com/AIDEN-UAMB/xytha-memory-atlas/actions/workflows/nous.yml/badge.svg" alt="Nous checks" /></a> <img src="https://img.shields.io/badge/Nous-1.0-366C9A" alt="Nous 1.0" /> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-527F91" alt="MIT license" /></a></p>
 
 ![Xytha Open Source](docs/nous-cover.svg)
 
-同一个仓库，两个可独立运行的入口。**Nous-1.0 现在公开完整执行系统源码**；原有 Memory Atlas 继续提供零依赖的记忆可视化演示。
+同一个仓库，三个可独立运行的入口。**新增 Henosis-1.0 原版深度分析执行核心**，提供任务规划、分层取证、跨期比较、审核与恢复源码；Nous-1.0 和 Memory Atlas 继续独立使用。
 
 | 项目 | 你可以做什么 | 开始 |
 | --- | --- | --- |
+| **[Henosis 1.0](henosis-1.0/README.md)** | 原版深度分析调度器、确定性取证、分区与恢复 | Node 22.13+ · CLI / 核心 API |
 | **[Nous 1.0](nous-1.0/README.md)** | 运行 Agent，检查规划、排盘、依据、校验、恢复与记忆 | Node 24 · 自备模型可选 |
 | **[Memory Atlas](https://aiden-uamb.github.io/xytha-memory-atlas/)** | 交互查看六层归档标签、来源与概述 | 直接在线试用 · 无需密钥 |
+
+## Henosis 1.0 · 原版深度分析
+
+```sh
+git clone https://github.com/AIDEN-UAMB/xytha-memory-atlas.git
+cd xytha-memory-atlas/henosis-1.0
+npm ci
+npm run build
+npm run demo
+```
+
+演示只运行合成人物的确定性排盘，无需密钥。连接自己的模型后可执行完整分析链；`npm test` 运行离线回归。参见 [完整指南](henosis-1.0/README.md)、[架构](henosis-1.0/docs/architecture.md)、[测试范围](henosis-1.0/docs/testing.md) 与 [来源哈希](henosis-1.0/SOURCE-MANIFEST.json)。
+
+本次公开原版 1.0，Henosis-2.0 保持独立。原版使用阶段进度与完成后的答案交付，包含有限修复及预算；不将合成测试描述为专业准确率证明。
 
 ## Nous 1.0 · 公开基线
 
@@ -29,7 +44,7 @@ npm start
 
 [架构图](nous-1.0/docs/architecture.md) · [版本与开源边界](nous-1.0/docs/version-boundary.md) · [源码哈希清单](nous-1.0/SOURCE-MANIFEST.json) · [测试说明](nous-1.0/docs/testing.md)
 
-1.0 的 SSE 实时呈现阶段进度，正文完成后分块传送；Nous-2.0 的逐段生成方案尚未实现。本公开包不包含 Henosis、生产认证部署、私人数据或私有 Git 历史。不对未经测试的速度或效果作承诺。
+Nous 1.0 的 SSE 实时呈现阶段进度，正文完成后分块传送；本目录不包含 Nous-2.0。Henosis 1.0 单独放在 `henosis-1.0/`。生产认证部署、私人数据和私有 Git 历史不公开；不对未经测试的速度或效果作承诺。
 
 ## Memory Atlas · 记忆检查演示
 

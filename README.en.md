@@ -1,11 +1,26 @@
 <p align="center"><img src="docs/mark.svg" width="72" alt="Xytha" /></p>
 <h1 align="center">Xytha Open Source</h1>
-<p align="center"><b>Grounded answers. Traceable memories.</b><br/>Nous 1.0 · Memory Atlas</p>
-<p align="center"><a href="https://xytha.com">Explore Xytha ↗</a> · <a href="nous-1.0/README.en.md">Nous source & setup</a> · <a href="https://aiden-uamb.github.io/xytha-memory-atlas/">Atlas live demo</a> · <a href="README.md">中文</a></p>
+<p align="center"><b>Grounded answers. Traceable memories.</b><br/>Henosis 1.0 · Nous 1.0 · Memory Atlas</p>
+<p align="center"><a href="https://xytha.com">Explore Xytha ↗</a> · <a href="henosis-1.0/README.en.md">Henosis source & setup</a> · <a href="nous-1.0/README.en.md">Nous source & setup</a> · <a href="https://aiden-uamb.github.io/xytha-memory-atlas/">Atlas live demo</a> · <a href="README.md">中文</a></p>
 
 ![Xytha Open Source](docs/nous-cover.svg)
 
-This repository now contains two independently runnable projects: **Nous 1.0**, the complete first-generation agent execution system with a local host, and **Memory Atlas**, the existing dependency-free memory inspection playground.
+Three independently runnable projects: **Henosis 1.0**, the original deep-analysis execution core; **Nous 1.0**, the first-generation agent system with a local host; and **Memory Atlas**, the dependency-free memory inspection playground.
+
+## Henosis 1.0
+
+Original planning, deterministic evidence, cross-period comparisons, bounded repair and resumable execution. Node.js 22.13 or newer:
+
+```sh
+git clone https://github.com/AIDEN-UAMB/xytha-memory-atlas.git
+cd xytha-memory-atlas/henosis-1.0
+npm ci
+npm run build
+npm run demo
+npm test
+```
+
+The demo computes a synthetic chart without model calls. To run the complete analysis with your own provider, see [setup](henosis-1.0/README.en.md). [Source hashes](henosis-1.0/SOURCE-MANIFEST.json) distinguish original code from standalone host adapters. Henosis-2.0 is not included.
 
 ## Nous 1.0
 
@@ -21,7 +36,7 @@ npm start
 
 Open **http://127.0.0.1:4174**. Your own provider is optional; without one, the host returns deterministic chart facts. See the [guide](nous-1.0/README.en.md), [architecture](nous-1.0/docs/architecture.md), [provenance](nous-1.0/SOURCE-MANIFEST.json) and [scope](docs/scope.md).
 
-Nous 1.0 streams progress and chunks a completed answer; incremental answer generation is not a shipped feature. Henosis, Nous 2.0, private history, credentials and real user data are excluded. The local host is not a public authentication deployment. Astrological metadata is not verified predictive evidence.
+Nous 1.0 streams progress and chunks a completed answer; incremental answer generation is not a feature of that package. Henosis 1.0 is published separately in `henosis-1.0/`. Nous 2.0, Henosis 2.0, private history, credentials and real user data are excluded. The local host is not a public authentication deployment. Astrological metadata is not verified predictive evidence.
 
 ## Memory Atlas
 

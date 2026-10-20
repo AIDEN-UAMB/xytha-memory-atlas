@@ -2,15 +2,17 @@
 
 2026-10-13 起，本仓库新增项目所有者授权公开的 **Nous-1.0 完整独立执行源码**。这扩大了此前仅发布 Atlas 检查示例的范围，不将未包含的私有实现自动公开。
 
+2026-10-20 起新增 **Henosis-1.0 原版执行核心与独立 CLI**。Henosis-2.0 继续保留私有，原版的宿主适配和测试范围在其目录单独说明。
+
 | 公开 | 保留私有或不包含 |
 | --- | --- |
 | Atlas 合成记忆、六层标签与可视化 | 实际用户资料、对话、记忆和反馈 |
-| Nous 原始执行链与完整依赖 | Henosis 规划执行器、未来 Nous-2.0 |
+| Nous 1.0 与 Henosis 1.0 原始执行链、运行依赖 | Henosis-2.0、Nous-2.0 |
 | Nous 排盘、模型适配、契约、概述与检索 | 官网完整前端和原生客户端 |
 | Nous 请求租约、检查点及历史兼容 | 私有 Git 历史及内部运维日志 |
 | 独立本地宿主、结构迁移、SQLite 与外发保护 | 生产认证部署、服务器地址、SSH 与模型密钥 |
 | 合成模型回归与来源哈希 | 真实供应商性能或用户研究数据 |
 
-逐项出处和适配见 [SOURCE-MANIFEST](../nous-1.0/SOURCE-MANIFEST.json) 与 [版本边界](../nous-1.0/docs/version-boundary.md)。历史协议含 Henosis 名称不表示其执行器已公开。Atlas 的 Pages 发布仍只上传静态允许列表，不运行 Node API 或模型。
+逐项出处和适配见 [Nous 来源](../nous-1.0/SOURCE-MANIFEST.json)、[Nous 版本边界](../nous-1.0/docs/version-boundary.md)、[Henosis 来源](../henosis-1.0/SOURCE-MANIFEST.json) 与 [Henosis 架构](../henosis-1.0/docs/architecture.md)。Atlas 的 Pages 发布仍只上传静态允许列表，不运行 Node API 或模型。
 
 本仓库的代码与原创示例采用 MIT。生产项目及未包含的算法不因该许可证而获得任何授权。设计方案能否构成科学贡献，需要独立的研究与证据；本仓库不作首创或效果保证。

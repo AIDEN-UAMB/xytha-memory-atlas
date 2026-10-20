@@ -1,5 +1,12 @@
 # Changelog
 
+## Henosis 1.0.0 — 2026-10-20
+
+- 新增 `henosis-1.0/`：原版 `xytha-henosis.1` / `henosis-depth.10` 执行核心、确定性排盘、模型传输与运行依赖。
+- 独立 Node CLI、合成排盘演示、自备模型入口、中英文指南、架构与来源哈希。
+- 十组原版离线回归、CLI 检查及 Windows/Linux CI；测试不调用真实模型。
+- 首页增加 Henosis 入口，保留 Nous 与 Atlas；Henosis-2.0、生产部署、凭据和私人记录不公开。
+
 ## Nous 1.0.0 — 2026-10-13
 
 - 新增 `nous-1.0/` 完整执行依赖、原始 API、排盘、证据契约、结构化记忆与恢复。

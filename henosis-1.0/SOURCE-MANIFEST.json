@@ -1,0 +1,372 @@
+{
+  "version": "1.0.0",
+  "engineVersion": "xytha-henosis.1",
+  "snapshotDate": "2026-10-20",
+  "scope": "Original execution core and runtime dependencies; standalone host adapters explicitly marked.",
+  "files": [
+    {
+      "path": "lib/providers/config.ts",
+      "kind": "original",
+      "sourceSHA256": "da9893377a2c7ef2d2b8031229fc7b2e33b37c9a8fc7c9add6a7938f24bf7806",
+      "publishedSHA256": "da9893377a2c7ef2d2b8031229fc7b2e33b37c9a8fc7c9add6a7938f24bf7806"
+    },
+    {
+      "path": "lib/context-capacity.ts",
+      "kind": "original",
+      "sourceSHA256": "418245b5bb5e1301262e7cc4b1448d78c35d0ea1ad90608d2660c6c4f6072cc3",
+      "publishedSHA256": "418245b5bb5e1301262e7cc4b1448d78c35d0ea1ad90608d2660c6c4f6072cc3"
+    },
+    {
+      "path": "lib/providers/transport.ts",
+      "kind": "original",
+      "sourceSHA256": "3f11d61f212b346aabe13ca09d3c1d481684ad9b87b72bf06642f6c9891d9ce8",
+      "publishedSHA256": "3f11d61f212b346aabe13ca09d3c1d481684ad9b87b72bf06642f6c9891d9ce8"
+    },
+    {
+      "path": "lib/context-telemetry.ts",
+      "kind": "original",
+      "sourceSHA256": "599612b308341cb427e1f58fc34023a801c82be21fd201a1421216a030fa265c",
+      "publishedSHA256": "599612b308341cb427e1f58fc34023a801c82be21fd201a1421216a030fa265c"
+    },
+    {
+      "path": "lib/providers/output.ts",
+      "kind": "original",
+      "sourceSHA256": "2ee20168f7013b3b0670664f32ae6a65eca18f5fb515cfed8f9e5d00c4167e15",
+      "publishedSHA256": "2ee20168f7013b3b0670664f32ae6a65eca18f5fb515cfed8f9e5d00c4167e15"
+    },
+    {
+      "path": "lib/providers/http-error.ts",
+      "kind": "original",
+      "sourceSHA256": "c10dcd4f67197cfcf3f37ff5060ffa1fde74bcf376ddbd2e023930aec2e20967",
+      "publishedSHA256": "c10dcd4f67197cfcf3f37ff5060ffa1fde74bcf376ddbd2e023930aec2e20967"
+    },
+    {
+      "path": "lib/providers/client.ts",
+      "kind": "original",
+      "sourceSHA256": "3d0a9dc4b8e87a82b2c0030842b3aee17ac577f1519f735110382bee5df1724a",
+      "publishedSHA256": "3d0a9dc4b8e87a82b2c0030842b3aee17ac577f1519f735110382bee5df1724a"
+    },
+    {
+      "path": "lib/henosis-capabilities.ts",
+      "kind": "original",
+      "sourceSHA256": "98ca0997a0a1a7f4120ddc18790d10325bb2ae693ea1b0ca84803c4f79d1232d",
+      "publishedSHA256": "98ca0997a0a1a7f4120ddc18790d10325bb2ae693ea1b0ca84803c4f79d1232d"
+    },
+    {
+      "path": "lib/henosis-generation.ts",
+      "kind": "original",
+      "sourceSHA256": "031a03127a2126583b0e589e47e20aac47dd136f2ec3a961951499abd41e76de",
+      "publishedSHA256": "031a03127a2126583b0e589e47e20aac47dd136f2ec3a961951499abd41e76de"
+    },
+    {
+      "path": "lib/chart-model.ts",
+      "kind": "original",
+      "sourceSHA256": "a9c8a025f91fe0d3cfe14c5899192a1f2b8581f48a84c4cd5de78f68ca52f8b7",
+      "publishedSHA256": "a9c8a025f91fe0d3cfe14c5899192a1f2b8581f48a84c4cd5de78f68ca52f8b7"
+    },
+    {
+      "path": "lib/transformations.ts",
+      "kind": "original",
+      "sourceSHA256": "2b5d0d2101aad90f68a0de225de73b68e383b0d7f211dcc2b65d9e1f57f391ea",
+      "publishedSHA256": "2b5d0d2101aad90f68a0de225de73b68e383b0d7f211dcc2b65d9e1f57f391ea"
+    },
+    {
+      "path": "lib/chart.ts",
+      "kind": "original",
+      "sourceSHA256": "b0c3ebc29c3d53821b19bc8d2b9934a4a8bf713e071bcd83424d4f60ab2e5cc0",
+      "publishedSHA256": "b0c3ebc29c3d53821b19bc8d2b9934a4a8bf713e071bcd83424d4f60ab2e5cc0"
+    },
+    {
+      "path": "lib/query-dates.ts",
+      "kind": "original",
+      "sourceSHA256": "145d6e882b10ee001f206ffb3d9d2a03b69c91407dcbe8005b9118d1232a7456",
+      "publishedSHA256": "145d6e882b10ee001f206ffb3d9d2a03b69c91407dcbe8005b9118d1232a7456"
+    },
+    {
+      "path": "lib/decision.ts",
+      "kind": "original",
+      "sourceSHA256": "afb98b955cd0b717cae3c8ef5b3927280326c1cabe12ccb295b4b6419b6211da",
+      "publishedSHA256": "afb98b955cd0b717cae3c8ef5b3927280326c1cabe12ccb295b4b6419b6211da"
+    },
+    {
+      "path": "lib/dialogue.ts",
+      "kind": "original",
+      "sourceSHA256": "0504d15817f19f2f32dcea4edc11d53d6c4c404bedd56ddb4ad6ffc3c163c3b7",
+      "publishedSHA256": "0504d15817f19f2f32dcea4edc11d53d6c4c404bedd56ddb4ad6ffc3c163c3b7"
+    },
+    {
+      "path": "lib/temporal-intent.ts",
+      "kind": "original",
+      "sourceSHA256": "0412ae9034e338c5719c7d667cacd04a7c4292764481012ae58029d037300bbc",
+      "publishedSHA256": "0412ae9034e338c5719c7d667cacd04a7c4292764481012ae58029d037300bbc"
+    },
+    {
+      "path": "lib/question-domains.ts",
+      "kind": "original",
+      "sourceSHA256": "107cc8cd4202a5b26ebbb5b46caa72d1bbe75d3ca815cc8caab15ad62ef74969",
+      "publishedSHA256": "107cc8cd4202a5b26ebbb5b46caa72d1bbe75d3ca815cc8caab15ad62ef74969"
+    },
+    {
+      "path": "lib/question-planner.ts",
+      "kind": "original",
+      "sourceSHA256": "cf0dfaaf33c9b57dc5aa4a2042f4b5e9b02fe215b1ef8fe99ce381ab3a61f6f0",
+      "publishedSHA256": "cf0dfaaf33c9b57dc5aa4a2042f4b5e9b02fe215b1ef8fe99ce381ab3a61f6f0"
+    },
+    {
+      "path": "lib/timing-request.ts",
+      "kind": "original",
+      "sourceSHA256": "5547c6ad42c6f8b2c6bb7ea6de3a7b0c52feb33d78f85a8d8227a3bb08b7edfc",
+      "publishedSHA256": "5547c6ad42c6f8b2c6bb7ea6de3a7b0c52feb33d78f85a8d8227a3bb08b7edfc"
+    },
+    {
+      "path": "lib/timing-periods.ts",
+      "kind": "original",
+      "sourceSHA256": "ec3402d38e6d9c0ebeb55ebd798005ebe888aac21aef6c95187b66f9e2171d3b",
+      "publishedSHA256": "ec3402d38e6d9c0ebeb55ebd798005ebe888aac21aef6c95187b66f9e2171d3b"
+    },
+    {
+      "path": "lib/timing-palaces.ts",
+      "kind": "original",
+      "sourceSHA256": "715698ff7dcea169e46b275fc07165f2fc514264e180dbacde17dd639c507dc3",
+      "publishedSHA256": "715698ff7dcea169e46b275fc07165f2fc514264e180dbacde17dd639c507dc3"
+    },
+    {
+      "path": "lib/timing.ts",
+      "kind": "original",
+      "sourceSHA256": "d72a54c9fa74c65ab2868480466f750f4dbee228e53d418e525f276612a2641b",
+      "publishedSHA256": "d72a54c9fa74c65ab2868480466f750f4dbee228e53d418e525f276612a2641b"
+    },
+    {
+      "path": "lib/analysis-strategy.ts",
+      "kind": "original",
+      "sourceSHA256": "7c368de8474abfc2e56a08ac77aea5803faa1b329b82bd08ff8be8ed1f6e9340",
+      "publishedSHA256": "7c368de8474abfc2e56a08ac77aea5803faa1b329b82bd08ff8be8ed1f6e9340"
+    },
+    {
+      "path": "lib/palace-memory-facts.ts",
+      "kind": "original",
+      "sourceSHA256": "7d07715ca4ef1f7ccbc37ac654f939892800a62fe154247bce2ad049a79d8e4f",
+      "publishedSHA256": "7d07715ca4ef1f7ccbc37ac654f939892800a62fe154247bce2ad049a79d8e4f"
+    },
+    {
+      "path": "lib/decade-comparison.ts",
+      "kind": "original",
+      "sourceSHA256": "7c1e8f16ad4272bfa7eea6b5c7d0effc669b636f86c34c291f77c4ed1363a9e5",
+      "publishedSHA256": "7c1e8f16ad4272bfa7eea6b5c7d0effc669b636f86c34c291f77c4ed1363a9e5"
+    },
+    {
+      "path": "lib/analysis-plan.ts",
+      "kind": "original",
+      "sourceSHA256": "c90520a632cf876a969ec4b54bda3006da4e4731841d1ff43aae5fe40da121c5",
+      "publishedSHA256": "c90520a632cf876a969ec4b54bda3006da4e4731841d1ff43aae5fe40da121c5"
+    },
+    {
+      "path": "lib/henosis-context.ts",
+      "kind": "original",
+      "sourceSHA256": "845ae9c80615455da68fcd3c42a5737dc35d53d15ccdc37355251f899659a5ab",
+      "publishedSHA256": "845ae9c80615455da68fcd3c42a5737dc35d53d15ccdc37355251f899659a5ab"
+    },
+    {
+      "path": "lib/henosis-intent.ts",
+      "kind": "original",
+      "sourceSHA256": "c410056f8b187f5fdea8bb9b8bb27437b6e3409df298fa67406ff01bcc9998f2",
+      "publishedSHA256": "c410056f8b187f5fdea8bb9b8bb27437b6e3409df298fa67406ff01bcc9998f2"
+    },
+    {
+      "path": "lib/henosis-answer.ts",
+      "kind": "original",
+      "sourceSHA256": "de986aeee92b7602a1da38285e60b0444ef55e5516971cbf29fc02d14f09fb15",
+      "publishedSHA256": "de986aeee92b7602a1da38285e60b0444ef55e5516971cbf29fc02d14f09fb15"
+    },
+    {
+      "path": "lib/henosis-contracts.ts",
+      "kind": "original",
+      "sourceSHA256": "e1b1bb31c27a984ced90a669855ab55d8ecdd35b6ae4b83ba62c301c16b49af5",
+      "publishedSHA256": "e1b1bb31c27a984ced90a669855ab55d8ecdd35b6ae4b83ba62c301c16b49af5"
+    },
+    {
+      "path": "lib/henosis-requirements.ts",
+      "kind": "original",
+      "sourceSHA256": "14139246d56b6371d970a51b187f6ef3b087ad452822b93fa2f6770a1c01f8aa",
+      "publishedSHA256": "14139246d56b6371d970a51b187f6ef3b087ad452822b93fa2f6770a1c01f8aa"
+    },
+    {
+      "path": "lib/henosis-orchestration.ts",
+      "kind": "original",
+      "sourceSHA256": "c836833892134750f389e0d7443ffad76a488889c63541dc149cb9e226f50058",
+      "publishedSHA256": "c836833892134750f389e0d7443ffad76a488889c63541dc149cb9e226f50058"
+    },
+    {
+      "path": "lib/henosis-plan.ts",
+      "kind": "original",
+      "sourceSHA256": "c96de2e1247e1f5d6a427739a2f9a87a005b5a52975f1c67549568a823c53a78",
+      "publishedSHA256": "c96de2e1247e1f5d6a427739a2f9a87a005b5a52975f1c67549568a823c53a78"
+    },
+    {
+      "path": "lib/henosis-rules.ts",
+      "kind": "original",
+      "sourceSHA256": "f8f80e0bdc2eccfb8370346de18cad6bc90613e6784c49d03a59e502eb847d06",
+      "publishedSHA256": "f8f80e0bdc2eccfb8370346de18cad6bc90613e6784c49d03a59e502eb847d06"
+    },
+    {
+      "path": "lib/henosis-evidence.ts",
+      "kind": "original",
+      "sourceSHA256": "879e88fc99fbccd5b0ac814b1ecfd89a0c33bfe930b7cbb8f69657e9014fa37f",
+      "publishedSHA256": "879e88fc99fbccd5b0ac814b1ecfd89a0c33bfe930b7cbb8f69657e9014fa37f"
+    },
+    {
+      "path": "lib/henosis-usage.ts",
+      "kind": "original",
+      "sourceSHA256": "9cb26cca8727f32d6c1fd61b93821cbd8fc8b4547f89a554e6d4a3724b30fbca",
+      "publishedSHA256": "9cb26cca8727f32d6c1fd61b93821cbd8fc8b4547f89a554e6d4a3724b30fbca"
+    },
+    {
+      "path": "lib/henosis-efficiency.ts",
+      "kind": "original",
+      "sourceSHA256": "90210cba1b4f842caa8eb9340ab3488de311296e5636192be9d079faaa901a76",
+      "publishedSHA256": "90210cba1b4f842caa8eb9340ab3488de311296e5636192be9d079faaa901a76"
+    },
+    {
+      "path": "lib/henosis-readable.ts",
+      "kind": "original",
+      "sourceSHA256": "fe324fbd0b5f03971ec5f2e04c12effa61493f26c7a542550428c400aabe9548",
+      "publishedSHA256": "fe324fbd0b5f03971ec5f2e04c12effa61493f26c7a542550428c400aabe9548"
+    },
+    {
+      "path": "lib/workflow-phase.ts",
+      "kind": "original",
+      "sourceSHA256": "8501dc953386e4d8917076731be0c557377d67c121d5951e1957c1b4b9d8255d",
+      "publishedSHA256": "8501dc953386e4d8917076731be0c557377d67c121d5951e1957c1b4b9d8255d"
+    },
+    {
+      "path": "lib/henosis-recovery.ts",
+      "kind": "original",
+      "sourceSHA256": "a11bf202b1cdb5ebfe5bce1df89325d450cc1f1b47f6fbaf4628a3bd4e52a0ab",
+      "publishedSHA256": "a11bf202b1cdb5ebfe5bce1df89325d450cc1f1b47f6fbaf4628a3bd4e52a0ab"
+    },
+    {
+      "path": "lib/henosis-router.ts",
+      "kind": "original",
+      "sourceSHA256": "aabddb86d29d27d8de3185e990de8180cd06f319ec8a97b79e91786f20cd61d2",
+      "publishedSHA256": "aabddb86d29d27d8de3185e990de8180cd06f319ec8a97b79e91786f20cd61d2"
+    },
+    {
+      "path": "lib/henosis-grounding.ts",
+      "kind": "original",
+      "sourceSHA256": "77a2ed4e2736aabcc97d1fb41f2326f5a3dd868b28e65af5b2e1ef787b65f717",
+      "publishedSHA256": "77a2ed4e2736aabcc97d1fb41f2326f5a3dd868b28e65af5b2e1ef787b65f717"
+    },
+    {
+      "path": "lib/henosis-runtime.ts",
+      "kind": "original",
+      "sourceSHA256": "270212b1372e77ead6bc245271ac80ca6eb1b01b9ea5d674505721ecefa7c7b2",
+      "publishedSHA256": "270212b1372e77ead6bc245271ac80ca6eb1b01b9ea5d674505721ecefa7c7b2"
+    },
+    {
+      "path": "lib/henosis-store.ts",
+      "kind": "host-adapter",
+      "sourceSHA256": "bce8223cba60f3c609a463e17623f18062ff90b24de3acaeb7ae2bba01625664",
+      "publishedSHA256": "22f18a5de2eadc6eb1ff6dd17e003d9f82ebbe2fd4dae7a22be245b2bb949520",
+      "note": "Original clean() and henosisFingerprint() only; application database omitted."
+    },
+    {
+      "path": "lib/server.ts",
+      "kind": "host-adapter",
+      "sourceSHA256": "30c455564dc8da468fa837c6508bc7fc6fc806bc5a115b8920efcf5a9dcdc3e4",
+      "publishedSHA256": "756b14fd230db3c445d596fa5c731db5f16df72ddc5502bb5666970ed7183a9c",
+      "note": "Original HttpError only; application authentication omitted."
+    },
+    {
+      "path": "lib/workflow.ts",
+      "kind": "host-type-adapter",
+      "sourceSHA256": "165665ae52b05c8b9f7ea5c9d94a5f5bd21bb84e0bb33d32ed6c64b18e88241d",
+      "publishedSHA256": "f1d922c37e4fab3f1daf6640fc98301a4b9a71e7f171f0be35c8ddc764cfbc8d",
+      "note": "Only the host interface required by this standalone runtime is supplied."
+    },
+    {
+      "path": "lib/demand-observation.ts",
+      "kind": "host-type-adapter",
+      "sourceSHA256": "53777206299550898ce84a9996147e0a88934f4b14d0adc4c56740a2ed953116",
+      "publishedSHA256": "4dd6ab11b63d38b072196053b92ef1da2242ca90d3d4ea2a545ba7c453aa0c66",
+      "note": "Only the host interface required by this standalone runtime is supplied."
+    },
+    {
+      "path": "tests/verify-henosis-depth.mjs",
+      "kind": "original-test",
+      "sourceSHA256": "1d527bc0524d45b95531a7f23e8b4d20fb4651c56621bf1a2775f4d30ca553ee",
+      "publishedSHA256": "1d527bc0524d45b95531a7f23e8b4d20fb4651c56621bf1a2775f4d30ca553ee"
+    },
+    {
+      "path": "tests/verify-henosis-efficiency.mjs",
+      "kind": "original-test",
+      "sourceSHA256": "6883b9eec51d708535af78bee2731b159ec8839289bbd820d1d0d6d559fa48ad",
+      "publishedSHA256": "6883b9eec51d708535af78bee2731b159ec8839289bbd820d1d0d6d559fa48ad"
+    },
+    {
+      "path": "tests/verify-henosis-evidence.mjs",
+      "kind": "standalone-test-adapter",
+      "sourceSHA256": "e54dc34221d71d78d09c925114376165283eb696ce05ae7ef8c3cd7d00a16542",
+      "publishedSHA256": "71271633b3b336285c88c613a841a100373aa60801560cb87d29568c0d61ac91"
+    },
+    {
+      "path": "tests/verify-henosis-generation.mjs",
+      "kind": "original-test",
+      "sourceSHA256": "7f51adbf170e4dff8618cf4a43f474565f484619af067571332dc061674404f2",
+      "publishedSHA256": "7f51adbf170e4dff8618cf4a43f474565f484619af067571332dc061674404f2"
+    },
+    {
+      "path": "tests/verify-henosis-orchestration.mjs",
+      "kind": "original-test",
+      "sourceSHA256": "ece9e2db238aa37602ad1f60e86726af06a64f3a34f5ab0352cd6ecc391c80a6",
+      "publishedSHA256": "ece9e2db238aa37602ad1f60e86726af06a64f3a34f5ab0352cd6ecc391c80a6"
+    },
+    {
+      "path": "tests/verify-henosis-plan.mjs",
+      "kind": "original-test",
+      "sourceSHA256": "5da6d3d2733c358ee7591381baf7a86515bad7824dad5d3f6dac5ca7a3bf2e12",
+      "publishedSHA256": "5da6d3d2733c358ee7591381baf7a86515bad7824dad5d3f6dac5ca7a3bf2e12"
+    },
+    {
+      "path": "tests/verify-henosis-reliability.mjs",
+      "kind": "original-test",
+      "sourceSHA256": "8fb59ac770bafc6e432dbb998dac3d375559a7871530c1ca08708cd92d1a810b",
+      "publishedSHA256": "8fb59ac770bafc6e432dbb998dac3d375559a7871530c1ca08708cd92d1a810b"
+    },
+    {
+      "path": "tests/verify-henosis-router.mjs",
+      "kind": "original-test",
+      "sourceSHA256": "70ff8d6a258ef486c2f5c421bc7fa4c07ba6611fd686ee812c89e5bae5d3b22e",
+      "publishedSHA256": "70ff8d6a258ef486c2f5c421bc7fa4c07ba6611fd686ee812c89e5bae5d3b22e"
+    },
+    {
+      "path": "tests/verify-henosis-runtime.mjs",
+      "kind": "original-test",
+      "sourceSHA256": "aa7447936febc1a206c12c6b863f415680ac2c122673985b255d389a746e21f0",
+      "publishedSHA256": "aa7447936febc1a206c12c6b863f415680ac2c122673985b255d389a746e21f0"
+    },
+    {
+      "path": "tests/verify-henosis-temporal-regression.mjs",
+      "kind": "original-test",
+      "sourceSHA256": "7f474b712e0f505bc8d2a50eb590c6a91e8589acd8d882c738dffba3ebc89765",
+      "publishedSHA256": "7f474b712e0f505bc8d2a50eb590c6a91e8589acd8d882c738dffba3ebc89765"
+    },
+    {
+      "path": "tests/fixtures/bprime-runtime-provider.mjs",
+      "kind": "original-test",
+      "sourceSHA256": "b73094d28d88fa3c6ca6064517e6b72de9e9cb6d54174e932854f443d67a5be9",
+      "publishedSHA256": "b73094d28d88fa3c6ca6064517e6b72de9e9cb6d54174e932854f443d67a5be9"
+    },
+    {
+      "path": "tests/fixtures/henosis-depth-answer.mjs",
+      "kind": "original-test",
+      "sourceSHA256": "74d1c5b8eac80ed252a38b8c1508ff3a061fcf1c3281c8f56973e786f6d45d06",
+      "publishedSHA256": "74d1c5b8eac80ed252a38b8c1508ff3a061fcf1c3281c8f56973e786f6d45d06"
+    },
+    {
+      "path": "tests/fixtures/henosis-temporal-regression.json",
+      "kind": "original-test",
+      "sourceSHA256": "317688c49c4f5c896efcd99803197ca91f827b1354402875b00be61e834ad826",
+      "publishedSHA256": "317688c49c4f5c896efcd99803197ca91f827b1354402875b00be61e834ad826"
+    }
+  ]
+}

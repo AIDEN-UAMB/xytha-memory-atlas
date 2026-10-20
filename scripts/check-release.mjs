@@ -4,7 +4,7 @@ import path from 'node:path';
 import {demo} from '../data/demo.mjs';
 import {validateArchive} from '../src/memory.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
-const allowedRoots=new Set(['.github','data','docs','schemas','scripts','src','tests','nous-1.0']);
+const allowedRoots=new Set(['.github','data','docs','schemas','scripts','src','tests','nous-1.0','henosis-1.0']);
 const allowedFiles=new Set(['.gitattributes','.gitignore','package.json','package-lock.json','README.md','README.en.md','LICENSE','CONTRIBUTING.md','SECURITY.md','CHANGELOG.md','index.html']);
 const excluded=new Set(['.git','node_modules','dist','artifacts','.runtime','.sites-runtime','coverage']);
 export async function checkRelease(){
