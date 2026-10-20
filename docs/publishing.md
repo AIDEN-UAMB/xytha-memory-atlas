@@ -4,7 +4,7 @@
 
 建议 GitHub About：
 
-> A source-traceable memory atlas with six time layers and archived palace tags. Dependency-free, synthetic-data playground from Xytha.
+> Xytha open source: Henosis 1.0 deep-analysis orchestration, Nous 1.0 agent runtime, and Memory Atlas provenance visualization.
 
 Website：`https://xytha.com`
 
@@ -12,9 +12,11 @@ Topics：`memory`、`personalization`、`visualization`、`provenance`、`human-
 
 ## 上传范围
 
-仅发布本公开目录，包括 `.github` 和 `.gitignore`。2026-10-13 授权新增 `nous-1.0/` 独立源码；范围以 `docs/scope.md` 及来源清单为准。不要加入服务器环境、运行日志、真实数据、整站源码、Henosis 实现或旧私有 Git 历史。
+仅发布本公开目录，包括 `.github` 和 `.gitignore`。2026-10-13 授权新增 `nous-1.0/`；2026-10-20 授权新增原版 `henosis-1.0/`。范围以 `docs/scope.md` 及各自来源清单为准。不要加入服务器环境、运行日志、真实数据、整站源码、Henosis-2.0、Nous-2.0 或旧私有 Git 历史。
 
 Nous 另需在其目录执行 `npm ci`、`npm run build`、`npm run typecheck`、`npm test`、`npm run check`。先前失败及其解释保留于验证记录。运行目录与生成数据不可加入 release。
+
+Henosis 另需在其目录执行 `npm ci`、`npm run build`、`npm test`、`npm run demo`、`npm run check`。保留 `.gitattributes` 中的字节保护设置，避免源码哈希因平台换行转换失效。
 
 先运行 `npm test`、`npm run check`、`npm run build`，再审阅文件列表。MIT 只适用于本公开包，保留其许可证与署名文本；其说明见 [GitHub 维护的许可证介绍](https://choosealicense.com/licenses/mit/)。
 
